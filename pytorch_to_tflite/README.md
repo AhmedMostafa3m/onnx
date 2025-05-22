@@ -9,7 +9,7 @@ This script converts a pre-trained YOLOv8 model from PyTorch to TensorFlow Lite 
 - **Code**:
   - Loads a pre-trained YOLOv8 model (`best.pt`) using `YOLO('./best.pt')`.
   - Attempts to export the model to TFLite format with `model.export(format='tflite')`.
-- **Note**: The direct conversion failed due to unspecified issues, leading to a manual conversion process.
+- **Note**: The direct conversion failed due to incompatibility issues, leading to a manual conversion process.
 
 #### Section 2: Manual Conversion to TFLite via ONNX
 This section converts the PyTorch model to ONNX, then to TensorFlow, and finally to TFLite (both unoptimized and optimized versions).
